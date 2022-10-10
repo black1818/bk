@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/fourth.css">
+  <script src="./js/flexible.js"></script>
+  <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <title>passages</title>
+  <style>
+     body{
+      min-width: 320px;
+      max-width: 1520px;
+      width: 20rem;
+      background-color: #fefedf;
+    }
+    .follow{
+      position: absolute;
+      display: none;
+      width: 1.0526rem;
+      height: .6579rem;
+    }
+  </style>
+</head>
+<body>
+  <img src="./img/a.gif" alt="" class="follow">
+  <div id="fourth" class="w">
+    <ul id="nav">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="introduction.html">个人介绍</a></li>
+      <li><a href="pic.html">图片欣赏</a></li>
+      <li><a href="passage.html">好文分享</a></li>
+      <li><a href="music.html">音乐驿站</a></li>
+    </ul>
+    <div class="passage">
+        <div class="item item1">
+          <p> 看到很棒的一句话:“ 海压竹枝低复举，风吹山角晦还明”。它的意思是乌云终将消散，黑暗终将过去，光明终会重现。人生在世没有事事如意，能屈能伸黑暗后自有万丈光芒在等你。</p>
+          <p>人生没有白走的路，每一步都算数，所有的经历都可以化作成长，生活从来都是泥沙俱下，鲜花与荆棘并存，我们带着诚意满满来，快也好慢也罢，只要往前走就好。</p>
+          <p>每个人都有自己的节奏，所以，不必因为他人而打乱或者否定自己，也不必因为现阶段的茫然就放弃向前的可能。</p>
+        </div>
+        <div class="item item2">
+         <img src="./img/p (10).jpg" alt="">
+        </div>
+        <div class="item item3">
+          <p>不吹不黑，你要是跟我打架，不出五秒你就得跪在地上，掐我的人中，求我不要死</p>
+          <p>老骥伏枥，志在千里。横扫饥饿，做回自己</p>
+          <p>想喝奶茶想吃肉，想不运动想变瘦</p>
+          <p>成年人的生活，除了容易胖，容易穷，容易秃，其他的都不容易</p>
+        </div>
+        <div class="item item4">
+          不是所有的鲜花，都盛开在春天；不是所有的河流，都流向大海。鲜花盛开在四季，河流流向八荒，只会热爱，山海皆可平，无处不风景。路的尽头都会有好景致，如果觉得不够好，那只是还没走到终点。别着急失望，总有人跨越山海为你而来。
+        </div>
+        <div class="item item5">
+          <img src="./img/p (7).jpg" alt="">
+        </div>
+        <div class="item item6">
+          <img src="./img/p (9).jpg" alt="">
+        </div>
+        <div class="item item7">
+          <p>放假了，买个地球仪吧，世界那么大，你不但可以看看，还能转转</p>
+          <p>好朋友都脱单了，我比较厉害，我脱发</p>
+          <p>万事开头难，中间难，结局更难</p>
+          <p>今天解决不了的事情，别着急，别慌，因为你明天也解决不了</p>
+        </div>
+    </div>
+    </div>
+    <script>
+      $(document).on('mousemove',(e)=>{
+  let x = e.pageX - 60 + 'px';
+  let y =e.pageY - 60 +'px';
+  $('.follow').attr("style","left:" + x + ";"+"top:" + y + ";"+"display:block")
+})
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/second.css">
+  <script src="./js/flexible.js"></script>
+  <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <title>introduction</title>
+  <style>
+     body{
+      min-width: 320px;
+      max-width: 1520px;
+      width: 20rem;
+      background-color: #fefedf;
+    }
+    .follow{
+      position: absolute;
+      display: none;
+      width: 1.0526rem;
+      height: .6579rem;
+    }
+  </style>
+</head>
+<body>
+  <img src="./img/a.gif" alt="" class="follow">
+  <div id="second" class="w">
+    <ul id="nav">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="introduction.html">个人介绍</a></li>
+      <li><a href="pic.html">图片欣赏</a></li>
+      <li><a href="passage.html">好文分享</a></li>
+      <li><a href="music.html">音乐驿站</a></li>
+    </ul>
+    <!-- 自我介绍的主体 -->
+    <div class="introduce">
+  <div class="big-text">
+    永恒的枷锁，那就斩断他，东方青苍&nbsp;
+  </div>
+  <div class="info">
+    <img src="./img/p1.jpeg" alt="">
+    <div class="main">
+      <h3>姓名：歪嘴战神</h3>
+    <h3>班级：不一“班”,不简单</h3>
+    <h3>学号：20x01010xxx</h3>
+    <h3>联系方式：1988116xxxx</h3>
+    <h3>爱好：唱歌，追剧，追星，喜欢撸修狗，喜欢看帅哥，看美女</h3>
+    <h3>每日日常：哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈....</h3>
+    </div>
+  </div>
+    </div>
+  </div>
+  <script>
+    $(document).on('mousemove',(e)=>{
+  let x = e.pageX - 60 + 'px';
+  let y =e.pageY - 60 +'px';
+  $('.follow').attr("style","left:" + x + ";"+"top:" + y + ";"+"display:block")
+})
+  </script>
+</body>
+</html>

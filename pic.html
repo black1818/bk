@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/third.css">
+  <script src="./js/flexible.js"></script>
+  <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <title>picture</title>
+  <style>
+     body{
+      min-width: 320px;
+      max-width: 1520px;
+      width: 20rem;
+      background-color: #fefedf;
+    }
+    .follow{
+      position: absolute;
+      display: none;
+      width: 1.0526rem;
+      height: .6579rem;
+    }
+  </style>
+</head>
+<body>
+  <img src="./img/a.gif" alt="" class="follow">
+  <div id="third" class="w">
+    <ul id="nav">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="introduction.html">个人介绍</a></li>
+      <li><a href="pic.html">图片欣赏</a></li>
+      <li><a href="passage.html">好文分享</a></li>
+      <li><a href="music.html">音乐驿站</a></li>
+    </ul>
+   <div class="img">
+   <div class="img-item">
+     <button class="img-btn btn1">点开有惊喜哦</button>
+     <div class="img-item-box">
+      <div class="one">
+       <img src="./img/p2 (1).JPG" alt="">
+       <img src="./img/p2 (5).JPG" alt="">
+       <img src="./img/p2 (3).JPG" alt="">
+       <img src="./img/p2 (4).JPG" alt="">
+      </div>
+      <div class="two">
+       <img src="./img/big2.png" alt="">
+      </div>
+     </div>
+   </div>
+   <div class="img-item">
+     <button class="img-btn btn2">点此欣赏</button>
+     <div class="img-item-box">
+       <div class="one">
+         <img src="./img/p (1).JPG" alt="">
+         <img src="./img/p (5).JPG" alt="">
+         <img src="./img/p (3).JPG" alt="">
+         <img src="./img/p (4).JPG" alt="">
+        </div>
+        <div class="two">
+         <img src="./img/big.JPG" alt="">
+        </div>
+     </div>
+   </div>
+   <div class="img-item">
+     <button class="img-btn btn3">最后一个哦</button>
+     <div class="img-item-box">
+       <img src="./img/pic (2).jpg" alt="">
+     </div>
+   </div>
+   </div>
+   </div>
+   <script>
+    $('#third .btn1').on('click',function(){
+ $(this).siblings().toggle('normal')
+})
+$('#third .btn2').on('click',function(){
+ $(this).siblings().toggle('normal')
+})
+$('#third .btn3').on('click',function(){
+ $(this).siblings().toggle('normal')
+})
+$(document).on('mousemove',(e)=>{
+  let x = e.pageX - 60 + 'px';
+  let y =e.pageY - 60 +'px';
+  $('.follow').attr("style","left:" + x + ";"+"top:" + y + ";"+"display:block")
+})
+   </script>
+</body>
+</html>

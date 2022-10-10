@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./js/flexible.js"></script>
+  <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="css/first.css">
+  <title>introduction</title>
+  <style>
+    body{
+      min-width: 320px;
+      max-width: 1520px;
+      width: 20rem;
+      background-color: #fefedf;
+    }
+    *{
+      margin: 0;
+      padding: 0;
+    }
+  .follow{
+      position: absolute;
+      display: none;
+      width: 1.0526rem;
+      height: .6579rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="first" class="w">
+<header class="big-test">
+  <p class="animate__animated animate__rubberBand">self-introduction</p>
+</header>
+<div class="classify">
+  <div class="classify-item">
+<a href="introduction.html">
+  <img src="./img/first (2).jpg" alt="">
+<span>个人介绍</span>
+</a>
+  </div>
+  <div class="classify-item">
+   <a href="pic.html">
+    <img src="./img/first (4).jpg" alt="">
+    <span>图片欣赏</span>
+   </a>
+  </div>
+  <div class="classify-item">
+   <a href="passage.html">
+    <img src="./img/first (3).jpg" alt="">
+    <span>好文分享</span>
+   </a>
+  </div>
+  <div class="classify-item">
+    <a href="music.html">
+      <img src="./img/first (5).jpg" alt="">
+    <span>音乐驿站</span>
+    </a>
+  </div>
+</div>
+<footer>
+  <span>联系我：</span>
+  <img src="./img/wechat.png" alt="">
+  <img src="./img/qq.png" alt="">
+</footer>
+  </div>
+  <img src="./img/a.gif" alt="" class="follow">
+<script>
+// 鼠标跟随
+$(document).on('mousemove',(e)=>{
+  let x = e.pageX - 60 + 'px';
+  let y =e.pageY - 60 +'px';
+  $('.follow').attr("style","left:" + x + ";"+"top:" + y + ";"+"display:block")
+})
+
+</script>
+</body>
+</html>

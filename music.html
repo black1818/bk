@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./js/flexible.js"></script>
+  <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">    
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"> </script>
+  <link rel="stylesheet" href="./css/fifth.css">
+  <title>music</title>
+  <style>
+      body{
+      min-width: 320px;
+      max-width: 1520px;
+      width: 20rem;
+      background-color: #fefedf;
+    }
+    .follow{
+      position: absolute;
+      display: none;
+      width: 1.0526rem;
+      height: .6579rem;
+    }
+  </style>
+</head>
+<body>
+  <img src="./img/a.gif" alt="" class="follow">
+  <div id="fifth">
+    <ul id="nav">
+      <li><a href="index.html">首页</a></li>
+      <li><a href="introduction.html">个人介绍</a></li>
+      <li><a href="pic.html">图片欣赏</a></li>
+      <li><a href="passage.html">好文分享</a></li>
+      <li><a href="music.html">音乐驿站</a></li>
+    </ul>
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./img/swiper (1).jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/swiper (2).jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/swiper (3).jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/swiper (4).jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/swiper (5).jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/swiper (6).jpg" alt="">
+          </div>
+      </div>
+      <div class="swiper-pagination"></div>
+  </div>
+
+  <div class="music-player">
+    <div class="player-item player-item1">
+      <img src="./img/music1.jpg" alt="">
+    </div>
+    <div class="player-item player-item2">
+      <p>《听妈妈的话》--周杰伦</p>
+      <p>小朋友,你是否有很多问号,
+        为什么,别人在那看漫画,
+        我却在学画画,对着钢琴说话,
+        别人在玩游戏,
+        我却靠在墙壁背我的 ABC,
+        我说我要一台大大的飞机,
+        但却得到一台旧旧录音机,
+        为什么要听妈妈的话,
+        长大后你就会开始懂了这段话,
+        哼,
+        长大后我开始明白,
+        为什么我 跑得比别人快,
+        飞得比别人高,
+        将来大家看的都是我画的漫画,
+        大家唱的都是 我写的歌,
+        妈妈的辛苦 不让你看见,
+        温暖的食谱在她心里面,
+        有空就多多握握她的手,
+        把手牵着一起梦游,
+        听妈妈的话 别让她受伤,
+        想快快长大 才能保护她,
+        美丽的白发 幸福中发芽,
+        天使的魔法 温暖中慈祥。</p>
+      <audio autoplay="autoplay" controls="controls"loop="loop" preload="auto"
+      src="./music/周杰伦 - 听妈妈的话 [mqms2].mp3"></audio>
+    </div>
+    <div class="player-item player-item3">
+      <p>《 彩虹 》--周杰伦</p>
+      <p>
+        看不见你的笑我怎么睡得着，你的声音这么近我却抱不到。
+        没有地球太阳还是会绕，没有理由我也能自己走。
+        你要离开我知道很简单，你说依赖是我们的阻碍。
+        就算放开但能不能别没收我的爱，当作我最后才明白。
+        有没有口罩一个给我，释怀说了太多就成真不了。
+        也许时间是一种解药，也是我现在正服下的毒药。
+
+      </p>
+      <audio autoplay="autoplay" controls="controls"loop="loop" preload="auto"
+      src="./music/周杰伦 - 彩虹 [mqms2].mp3"></audio>
+    </div>
+    <div class="player-item player-item4">
+      <img src="./img/music2.jpg" alt="">
+    </div>
+    <div class="player-item player-item5">
+      <img src="./img/music3.jpg" alt="">
+    </div>
+    <div class="player-item player-item6">
+      <p>《稻香》--周杰伦</p>
+      <p>对这个世界,如果你有太多的抱怨,
+        跌倒了,就不敢继续往前走,       
+        为什么,人要这么的脆弱 堕落,        
+        请你打开电视看看,      
+        多少人为生命,在努力勇敢的走下去,       
+        我们是不是该知足,
+        珍惜一切,就算没有拥有。           
+        </p>
+        <p> 
+          还记得,你说家是唯一的城堡,       
+          随着稻香,河流继续奔跑,       
+          微微笑,小时候的梦我知道,      
+          不要哭,让萤火虫带着你逃跑,       
+          乡间的歌谣,永远的依靠,
+          回家吧, 回到最初的美好,
+        </p>
+      <audio autoplay="autoplay" controls="controls"loop="loop" preload="auto"
+      src="./music/周杰伦 - 稻香 [mqms2].mp3"></audio>
+    </div>
+  </div>
+  </div>
+  <script> 
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 40,
+	  centeredSlides: true,
+	  loop: true,
+    autoplay: {
+          delay: 2000, //2秒切换一次
+          // pauseOnMouseEnter: true, //悬停停止切换
+        },
+    });
+    $(document).on('mousemove',(e)=>{
+let x = e.pageX - 60 + 'px';
+let y =e.pageY - 60 +'px';
+$('.follow').attr("style","left:" + x + ";"+"top:" + y + ";"+"display:block")
+})
+  </script>
+</body>
+</html>
